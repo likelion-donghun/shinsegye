@@ -6,6 +6,7 @@ from sklearn.base import clone
 from sklearn.pipeline import _name_estimators
 import numpy as np
 import operator
+import matplotlib.pyplot as plt
 
 
 class MajorityVoteClassifier(BaseEstimator, ClassifierMixin):
@@ -110,8 +111,5 @@ for clf, label in zip(all_clf, clf_labels):
                              cv=10,
                              scoring='roc_auc')
     print("Accuracy: %0.2f (+/- %0.2f)[%s]" %(scores.mean(), scores.std(), label))
-
-
-
 
 
