@@ -1,7 +1,7 @@
 Python Machine Learning
 =======================
 
-##Errata of example code
+## Errata of Example Code
 
 
 
