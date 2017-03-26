@@ -18,6 +18,7 @@ Python Machine Learning
 -if __name__ == '__main__':
 8. [p.255, line 25](https://github.com/likelion-donghun/shinsegye/commit/aa1de00a77e616a303017573231f57387d979a61)
 
-
+9. [p.271, ]()
+-</dt>
 
 
