@@ -22,7 +22,7 @@ print(next(stream_docs(path='./movie_data.csv')))
 
 def get_minibatch(doc_stream, size):
     docs, y = [], []
-    try:
+    try: #교재 indent error
         for _ in range(size):
             text, label = next(doc_stream)
             docs.append(text)
