@@ -61,3 +61,14 @@ num_rooms_std = sc_x.transform([5.0]) #방 5개를 스케일링
 price_std = lr.predict(num_rooms_std) #방 5개의 가격 예측
 print("Print in $1000's: %.3f" % sc_y.inverse_transform(price_std))
 print("Print in scale: %.3f" % price_std)
+
+# sklearn lin_reg
+from sklearn.linear_model import LinearRegression
+slr = LinearRegression()
+slr.fit(X, y)
+print('Slope: %.3f' % slr.coef_[0])
+print('Intercept: %.3f' % slr.intercept_)
+lin_regplot(X, y, slr)
+plt.xlabel('Average number of rooms [RM] (standardized)')
+plt.ylabel('Price in $1000\'s [MEDV] (standardized)')
+plt.show()
