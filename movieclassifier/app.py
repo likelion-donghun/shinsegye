@@ -6,6 +6,10 @@ import os
 import numpy as np
 # import HashingVectorizer from local dir
 from vectorizer import vect
+from update import update_model
+
+if __name__ == '__main__':
+    update_model(filepath=db, model=clf, batch_size=10000)
 
 app = Flask(__name__)
 # Preparing the Classifier
